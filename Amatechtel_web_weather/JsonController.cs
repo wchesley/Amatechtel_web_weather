@@ -9,11 +9,11 @@ namespace Amatechtel_web_weather
 {
     public class JsonController
     {
-        public string GetWeather(string city)
+        public string GetWeather(string city, string state)
         {
             var response = string.Empty;
             const string Api = "http://api.wunderground.com/api/047d1a51849f71a0/conditions/q/TX/";
-            string ApiAddr = Api + city + ".json";
+            string ApiAddr = Api + state + "/" + city + ".json";
             using (var client = new WebClient())
             {
                 try

@@ -12,10 +12,11 @@
     
         Select City:
         <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
+        <br />
+        Select State:
+        <asp:TextBox ID="txtState" runat="server"></asp:TextBox>
     
     </div>
-        <p>
-            &nbsp;</p>
         <p>
             <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
         </p>

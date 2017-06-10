@@ -17,8 +17,9 @@ namespace Amatechtel_web_weather
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             string city = txtCity.Text;
+            string state = txtState.Text;
             JsonController getJson = new JsonController();
-            lblResponse.Text = getJson.GetWeather(city);
+            lblResponse.Text = getJson.GetWeather(city, state);
         }
     }
 }
